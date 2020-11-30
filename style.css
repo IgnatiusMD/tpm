@@ -1,0 +1,40 @@
+/* selector:
+tag
+class .
+ID #
+atribut khusus
+
+Sizings:
+1em = 16px
+
+positions:
+absolute - dipaksa gitu, gimanapun, ya disitu
+fixed - biasanya ada, kayak navbar gitu, kalo scorol kebawah, tetep muncul
+relative - dia sesuaikan sama div
+sticky - gabungan relative gitu si..
+*/
+
+h2{
+    color: blueviolet;
+    text-align: center;
+    text-decoration: line-through;
+    text-shadow: 1px 1px;
+}
+
+#paragraf{
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 5px;
+    color: green;
+}
+
+.heading3{
+    color: rgb(195, 132, 253);
+}
+
+/* body{
+    background-image: url('');
+    background-repeat: no-repeat; repeat-x; repeat-y
+    background-color:cornflowerblue;
+    opacity: 0.8;
+} */
