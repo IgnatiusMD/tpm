@@ -12,6 +12,9 @@ absolute - dipaksa gitu, gimanapun, ya disitu
 fixed - biasanya ada, kayak navbar gitu, kalo scorol kebawah, tetep muncul
 relative - dia sesuaikan sama div
 sticky - gabungan relative gitu si..
+
+keyframe bole diatas
+media query harus dibawah
 */
 
 h2{
@@ -38,3 +41,83 @@ h2{
     background-color:cornflowerblue;
     opacity: 0.8;
 } */
+
+@keyframes animasi{
+    /* from{
+        color: red;
+    }
+    to{
+        color: blue;
+    } */
+    0%{
+        color: red;
+        left: 0;
+    }50%{
+        color: green;
+        left: 500px;
+    }100%{
+        color: blue;
+    }
+
+}
+
+.text{
+    animation: animasi 3s linear 1s infinite none;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+}
+
+.div1{
+    background-color: red !important;
+}
+.div2{
+    background-color: blue;
+}
+.div3{
+    background-color: magenta;
+}
+.div4{
+    background-color: mediumseagreen;
+}
+.div5{
+    background-color: gold;
+}
+
+.flex{
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* media query : print, speech, screen */
+@media only screen and (max-width: 600px){
+    .square{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+/* 
+Library: Kumpulan Fungsi
+Framework: Laravel - Strukturnya uda disiapin, tinggal isi (Template)
+*/
+
+/* 
+- LINEAR -
+ease
+ease-in
+ease-out
+ease-in-and-out
+
+- DIRECTION -
+reverse (100% - 0%)
+alternate (0% -> 100% -> 0%)
+alternate-reverse (100% -> 0% -> 100%)
+none
+*/
